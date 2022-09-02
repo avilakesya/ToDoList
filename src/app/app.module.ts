@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TabelaComponent } from './tarefa/tabela/tabela.component';
 import { CadastrarComponent } from './tarefa/cadastrar/cadastrar.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CadastrarComponent } from './tarefa/cadastrar/cadastrar.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    DatePipe
   ],
   providers: [],
   bootstrap: [AppComponent]
