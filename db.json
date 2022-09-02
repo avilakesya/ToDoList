@@ -1,0 +1,28 @@
+{
+  "tarefas": [
+    {
+      "id": 1,
+      "titulo": "Acordar cedo",
+      "descrição": "despertador",
+      "categoria": "dificil",
+      "data": "2022-08-31T06:33:03.969Z",
+      "concluida": true
+    },
+    {
+      "id": 3,
+      "titulo": "Caminhada",
+      "descrição": "educar o corpo para acordar cedo",
+      "categoria": "dificil",
+      "data": "2022-08-31T06:53:03.969Z",
+      "concluida": true
+    },
+    {
+      "id": 3,
+      "titulo": "Tomar café da manhã",
+      "descrição": "preparar",
+      "categoria": "prioritario",
+      "data": "2022-08-31T7:33:03.969Z",
+      "concluida": true
+    }
+  ]
+}
