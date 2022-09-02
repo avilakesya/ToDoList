@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 })
 export class CrudService {
 
-  urlBase = "http://localhost:3000/tarefas";
+  urlBase : string;
 
   constructor(private http : HttpClient ) {
-
+    this.urlBase = "http://localhost:3000/tarefas";
   }
 
   addTask(tarefa: Tarefa ) : Observable<Tarefa>{

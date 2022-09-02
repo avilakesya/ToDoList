@@ -1,3 +1,43 @@
+<div class="conatiner-fluid bg-light">
+  <div class="container bg-light">
+
+    <div class="row mt-4 terceiradiv">
+      <div class="col"></div>
+      <div class="col-md-6 bg-white shadow">
+
+        <div class="card bg-warning mt-4">
+          <h4 class="text-white p-3 pt-2 pb-2">To Do List</h4>
+        </div>
+
+        <div class="shadow">
+          <div class="input-group p-4">
+            <input type="text" class="form-control" placeholder="Digite o título..." name="tarefa" [(ngModel)]="addTarefaValue">
+            <button class="btn btn-outline-success" type="button" (click)="addTarefa()">+</button>
+          </div>
+        </div>
+
+            <h4 class="text-primary mt-4">Tasks : </h4>
+
+            <div class="divh4">
+              <div class="m-3" *ngFor="let tarefa of tarefaArr">
+                <div class="p-2 shadow border">
+                  <div class="input-group row ps-3">
+                  <div class="card col-md-10 border-0"> {{ tarefa.titulo }} </div>
+                  <button class="btn btn-outline-primary col">E</button>
+                  <div class="btn btn-outline-danger col" (click)="deleteTarefa(tarefa)">X</div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div></div>
+
+      </div>
+      <div class="col"></div>
+
+    </div>
+  </div>
+</div>
+
 <!-- <p>Tarefas</p>
 
 <table class="table table-striped">
